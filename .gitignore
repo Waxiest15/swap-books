@@ -49,7 +49,6 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
 .DS_Store
 *.suo
 *.ntvs*
@@ -57,3 +56,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Node installed by frontend-maven-plugin
+swap-books-ui/node/
+
+# Ignore static genereted content
+swap-books/src/main/resources/static/
