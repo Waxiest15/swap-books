@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: swap-books
+  mongodb:
+    uri: mongodb+srv://sample:UdyVzYaAavL3XBcU@cluster0.e0mpsl4.mongodb.net/?
+    database: swap-books
