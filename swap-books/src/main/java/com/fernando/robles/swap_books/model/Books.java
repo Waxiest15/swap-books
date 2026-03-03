@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Books {
     @Id
-    private Long ISBN;
+    private Long isbn;
     private String title;
     private String author;
     private List<String> genres;
