@@ -1,6 +1,6 @@
 package com.fernando.robles.swap_books.controller;
 
-import com.fernando.robles.swap_books.BookRepository;
+import com.fernando.robles.swap_books.repository.BookRepository;
 import com.fernando.robles.swap_books.model.Books;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
@@ -19,12 +19,12 @@ public class BooksController {
     }
 
     @QueryMapping
-    public List<Books> books() {
+    public List<Books> getAll() {
         return repository.findAll();
     }
 
     @QueryMapping
-    public Books bookByIsbn(@Argument Long isbn) {
+    public Books getByISBN(@Argument Long isbn) {
         return repository.findById(isbn).orElse(null);
     }
 }
