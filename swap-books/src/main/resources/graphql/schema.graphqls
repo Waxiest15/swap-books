@@ -1,0 +1,18 @@
+type Book {
+  isbn: ID!
+  title: String
+  author: String
+  genres: [String!]
+  tags: [String!]
+  pages: Int
+  publisher: String
+  publicationDate: String
+  condition: String
+  conditionDescription: String
+  description: String
+}
+
+type Query {
+  getAll: [Book]!
+  getByISBN(isbn: ID!): Book
+}
